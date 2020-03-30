@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    section{
+      margin:auto;
+      text-align:center;
+      border:solid;
+      width:80%;
+      padding:20px;
+    }
+    form {
+      text-align:left;
+    }
+  </style>
+
+  <meta charset="utf-8">
+  <title>Basic form</title>
+</head>
+
+<body>
+<section>
+  <h1 id="title">My Survey Form</h1>
+  <p id="description">Integer sed augue non mauris consequat viverra. Curabitur aliquet libero neque, lacinia pretium diam rhoncus ac. Integer pulvinar, enim id sagittis consequat, neque enim tincidunt ante, vitae luctus lectus velit vel dolor. 
+  </p>
+  
+  <form id="survey-form" action="javascript:void(0);">
+    <label id="name-label">Name</label>
+    <input type="text" id="name" placeholder="Name" required>
+    <br>
+    <label id="email-label">Email</label>
+    <input type="email" placeholder="email" id="email" required>
+    <br>
+    <label id="number-label">Number</label>
+    <input type="number" min="0" max="10" placeholder="number" id="number">
+    <br>
+    <label id="dropdown-label">Choose option</label>
+    <select id="dropdown">
+      <option value="val1">val1</option>
+      <option value="val2">val2</option>
+      <option value="val3">val3</option>
+      <option value="val4">val4</option>
+    </select>
+    <br>
+    <label id="radio-label">Choose gender</label><br>
+    <input type="radio" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" name="gender" value="other">
+    <label for="other">Other</label>
+    <br>
+    <label>Choose a color</label><br>
+    <input type="color">
+    <br>
+    <label id="radio-checkbox">Choose checkbox</label><br>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br>
+    
+    <textarea placeholder="Your notes"></textarea>
+    <input type="submit" id="submit" value="Submit!">
+  </form>
+</section>
+</body>
+</html>
