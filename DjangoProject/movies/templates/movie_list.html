@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="movies-grid">
+    {% for movie in movies %}
+    <div class="container movie">
+        <h1>{{movie.title}}</h1>
+        <div class="movie-content">
+            <img class="poster-image" alt="{{movie.title}} poster" src="{% static '/poster.jpg' %}">
+            <table class="movie-data-table">
+                <tr>
+                    <td>Opis:</td>
+                    <td>{{ movie.short_description }}</td>
+                </tr>
+                <tr>
+                    <td>Data premiery:</td>
+                    <td>{{ movie.published_at }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
